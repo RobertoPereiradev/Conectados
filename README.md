@@ -1,1 +1,1 @@
-# Atividades e exercícios do projeto COnectados que buscam aprofundar o estudo da programação em jovens
+# Atividades e exercícios do projeto Conectados que buscam aprofundar o estudo de programação em jovens
