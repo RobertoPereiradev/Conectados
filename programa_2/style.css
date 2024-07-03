@@ -1,0 +1,29 @@
+body {
+    background-color: grey; /* tela cinza */
+    font-family: helvetica; /* a fonte de todo texto é esse (de todo texto pois é declarado no body) */
+}
+
+.conteiner {
+    height: 100vh; /* comprimento ( nesse caso é 100% da altura do viewport (obs: vh == viewport height)) */
+    width: 100%; /* largura (tela inteira) */
+    padding-top: 5rem; /* separação entre inicio da tela */
+    display: flex; /* possibilita o rearranjo dos elementos */
+    justify-content: center; /* elementos flexíveis ficam no centro do contêiner */
+}
+
+.caixa {
+    font-size: 2.5rem; /* tamanho da fonte */
+    font-weight: bold; /* seria "peso da fonte" e nesse caso é negrito "normal" */
+    color: white; /* texto da div será dessa cor */
+    text-align: center; /* como os conteúdos inline (estes ocupam apenas o necessário de sua larguras(diferentemente do block que ocupa sua largura total), ficam um do lado do outro e estão na mesma linha (mesma horizontal)) terão que ficar (utilizado caso suas áreas não completem o espaço reservado) */
+    border: 2px dotted whitesmoke; /* solid faz com que ela seja contínua e inteira/ Dotted faz ela pontilhada */
+    border-radius: 1rem; /* 16px */
+    padding: 1rem 2rem;
+    height: 70px;
+    display: flex; /* isso torna possível align-items */
+    align-items: center; /* faz com os elementos filhos fiquem no meio da cross axis e paralelos a main axis */
+}
+
+.caixa span {
+    margin-right: .5rem; /* feito para espaçar os separados entre os separadores (:) */
+}
