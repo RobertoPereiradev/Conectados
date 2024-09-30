@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="icon" href="\Users\betox\Documents\arquivos\programa_6/favicon-16x16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário com Validações</h1>    
+        <form>
+            <div class="controle">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+                <div class="erro"></div> <!-- forma de colocar mensagem de erro. No caso eu já coloco ele como existente e se precisar o faço aparecer -->
+            </div>
+            <div class="controle">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+                <div class="erro"></div>
+            </div>
+            <div class="controle">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto">
+                <div class="erro"></div>
+            </div>
+            <div class="controle">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <div class="erro"></div>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

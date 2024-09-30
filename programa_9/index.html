@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjeta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Gorjeta</h1>
+        <div class="input">
+            <label for="conta_value">Valor da conta:</label>
+            <input type="number" name="conta_value" id="conta_value" placeholder="R$" step="0.01"> <!--de quanto em quanto ele aumenta--> 
+            <label for="service_qual">Qualidade do serviço:</label>
+            <select name="service_qual" id="service_qual">
+                <option value="0.15">Excelente - 15%</option>
+                <option value="0.07">Ótimo - 7%</option>
+                <option value="0.05">Normal - 5%</option>
+                <option value="0.02">Ruim - 2%</option>
+                <option value="0.01">Horrível - 1%</option>
+            </select>
+            <button onclick="calculo_gorjeta()" type="button" id="gerar">Calcular Gorjeta</button>
+        </div>
+        <div class="output">
+            <label for="gorjeta_value">Valor da gorjeta:</label>
+            <input type="text" name="gorjeta_value" id="gorjeta_value" disabled> <!--disabled faz com que você não consiga mudar o valor da caixa-->
+            <label for="total_value">Valor total:</label>
+            <input type="text" name="total_value" id="total_value" disabled>
+        </div>
+    </div>
+</body>
+</html>

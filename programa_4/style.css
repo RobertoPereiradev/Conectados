@@ -1,0 +1,72 @@
+#mural {
+    display: flex;
+    flex-wrap: wrap; /* se for necessário os itens vão para a linha debaixo */
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.titulo {
+    text-align: center;
+    font-family: helvetica;
+}
+
+.galeria-item {
+    width: 32.7%;
+}
+
+.galeria-foto {
+    padding-bottom: 0.2rem;
+    height: 250px;
+    width: 100%;
+    object-fit: cover; /* em cover a imagem mostrada é somente na parte delimitada, ou seja, as dimensões não são mudadas, mas a imagem é recortada */
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.galeria-foto:hover {
+    transform: scale(1.15);
+}
+
+.light-box {
+    display: none;
+    position: fixed; /* ao descer ou subir a tela, a posição em relação à parte que nos é visível não muda */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.light-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#light-image {
+    width: 700px;
+    object-fit: cover;
+}
+
+.lightbox-close {
+    display: none;
+    position: absolute; /* está em um plano acima de todos os outros itens */
+    z-index: 2;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem; /* tamanho e fonte */
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 0.1rem 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lightbox-close:hover {
+    color: #000;
+    background-color: #fff;
+}

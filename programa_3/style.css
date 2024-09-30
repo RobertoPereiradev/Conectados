@@ -1,0 +1,47 @@
+body {
+    background-color: steelblue;
+    padding-top: 2rem;  /* ou margin-top: 5rem para .citacao */
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.citacao {
+    border: 2px white solid;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-family: helvetica;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0, auto;
+}
+
+.citacao .texto {
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+}
+
+.autor {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+.button {
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem ; /* você pode colocar 4 valores: somente 1 -> para todos os lados/ somente 2 -> 1º cima e baixo, 2º esquerda e direita/ somente 3 -> 1º cima,  2º esquerda e direita, 3º baixo/ os 4 -> 1º cima, 2º direita, 3º baixo, 4º esquerda */
+    cursor: pointer;
+    opacity: .7;
+    transition: .2s;
+}
+
+.button:hover {
+    opacity: 1;
+}
